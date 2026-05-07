@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Md. Raiyan Tahrim — Journalist & Researcher</title>
+<meta name="description" content="Md. Raiyan Tahrim is a Bangladeshi journalist and researcher covering press freedom, human rights, governance, and public interest reporting." />
+<meta name="keywords" content="Raiyan Tahrim, journalist, researcher, Bangladesh, investigative reporting, press freedom, TOB News" />
+<meta name="author" content="Md. Raiyan Tahrim" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Md. Raiyan Tahrim — Journalist & Researcher" />
+<meta property="og:description" content="Bangladeshi journalist and researcher covering public interest stories: press freedom, human rights, governance, and field reporting." />
+<meta property="og:url" content="https://raiyantahrim.com" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Md. Raiyan Tahrim — Journalist & Researcher" />
+<meta name="twitter:description" content="Bangladeshi journalist and researcher covering public interest stories." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+
+<style>
+  /* ─── DESIGN TOKENS ────────────────────────────────────── */
+  :root {
+    --ink:        #151311;
+    --ink-2:      #3a3530;
+    --ink-3:      #6b6560;
+    --rule:       #d4cfc9;
+    --rule-light: #ede9e4;
+    --bg:         #f8f5f0;
+    --bg-card:    #ffffff;
+    --red:        #c0392b;
+    --red-hover:  #a93226;
+    --accent:     #2c3e50;
+    --accent-2:   #1a252f;
+    --tag-bg:     #eee9e2;
+    --tag-text:   #4a4540;
+    --nav-h:      60px;
+    --max-w:      1140px;
+    --serif:      'Playfair Display', Georgia, serif;
+    --serif-text: 'Source Serif 4', Georgia, serif;
+    --sans:       'DM Sans', system-ui, sans-serif;
+    --transition: 0.22s ease;
+  }
+
+  [data-theme="dark"] {
+    --ink:        #eae5de;
+    --ink-2:      #bab5ae;
+    --ink-3:      #807870;
+    --rule:       #38322c;
+    --rule-light: #2a2520;
+    --bg:         #100f0c;
+    --bg-card:    #1a1814;
+    --red:        #e05a4a;
+    --red-hover:  #c94b3a;
+    --accent:     #8fb0ca;
+    --accent-2:   #a5c5de;
+    --tag-bg:     #28221e;
+    --tag-text:   #9a9490;
+  }
+
+  /* ─── RESET ─────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    transition: background var(--transition), color var(--transition);
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { cursor: pointer; border: none; background: none; font-family: inherit; }
+  ul { list-style: none; }
+
+  /* ─── TOP NAV ────────────────────────────────────────────── */
+  #top-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
+    transition: background var(--transition), border-color var(--transition);
+  }
+  .nav-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: var(--nav-h);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .nav-logo span { color: var(--red); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .nav-links a {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    padding: 6px 14px;
+    transition: color var(--transition);
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute; bottom: 0; left: 14px; right: 14px;
+    height: 2px;
+    background: var(--red);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition);
+  }
+  .nav-links a:hover { color: var(--red); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+  .nav-controls { display: flex; align-items: center; gap: 10px; }
+  #dark-toggle {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-2);
+    font-size: 1rem;
+    transition: color var(--transition), background var(--transition);
+    border: 1px solid var(--rule);
+  }
+  #dark-toggle:hover { color: var(--red); background: var(--tag-bg); }
+  #menu-toggle {
+    display: none;
+    width: 36px; height: 36px;
+    flex-direction: column; justify-content: center; align-items: center;
+    gap: 5px;
+  }
+  #menu-toggle span {
+    display: block; width: 22px; height: 2px;
+    background: var(--ink-2);
+    border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition);
+  }
+  #mobile-nav {
+    display: none;
+    flex-direction: column;
+    padding: 12px 24px 20px;
+    border-top: 1px solid var(--rule);
+    background: var(--bg);
+    gap: 4px;
+  }
+  #mobile-nav.open { display: flex; }
+  #mobile-nav a {
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-light);
+    transition: color var(--transition);
+  }
+  #mobile-nav a:hover { color: var(--red); }
+
+  /* ─── PAGE WRAPPER ───────────────────────────────────────── */
+  main { padding-top: var(--nav-h); }
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+  .section { padding: 80px 0; }
+  .section-sm { padding: 60px 0; }
+
+  /* ─── SECTION HEADER ─────────────────────────────────────── */
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 16px;
+  }
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 30px; height: 2px;
+    background: var(--red);
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .section-lead {
+    font-family: var(--serif-text);
+    font-size: 1.08rem;
+    color: var(--ink-2);
+    max-width: 600px;
+    line-height: 1.75;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0;
+  }
+
+  /* ─── HERO ───────────────────────────────────────────────── */
+  #hero {
+    padding: 90px 0 70px;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+  }
+  #hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 420px; height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(192,57,43,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 60px;
+    align-items: center;
+  }
+  .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .hero-eyebrow-rule { width: 38px; height: 2px; background: var(--red); }
+  .hero-eyebrow-text {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+  .hero-headline {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .hero-headline em {
+    font-style: italic;
+    color: var(--red);
+  }
+  .hero-bio {
+    font-family: var(--serif-text);
+    font-size: 1.08rem;
+    color: var(--ink-2);
+    line-height: 1.8;
+    max-width: 580px;
+    margin-bottom: 36px;
+  }
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--red);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 13px 26px;
+    border-radius: 2px;
+    transition: background var(--transition), transform 0.15s;
+  }
+  .btn-primary:hover { background: var(--red-hover); transform: translateY(-1px); }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ink-2);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    transition: color var(--transition), border-color var(--transition), transform 0.15s;
+  }
+  .btn-secondary:hover { color: var(--red); border-color: var(--red); transform: translateY(-1px); }
+  .hero-portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+  }
+  .portrait-frame {
+    width: 220px; height: 260px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    background: var(--rule-light);
+    border: 1px solid var(--rule);
+  }
+  .portrait-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 3px solid var(--red);
+    border-radius: 3px;
+    transform: translate(8px, 8px);
+    z-index: -1;
+  }
+  .portrait-initials {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--ink-3);
+    letter-spacing: -0.02em;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 20px;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-n {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--red);
+    line-height: 1;
+  }
+  .stat-l {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-top: 4px;
+  }
+
+  /* ─── TICKER ─────────────────────────────────────────────── */
+  #ticker {
+    background: var(--accent);
+    color: #fff;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .ticker-inner {
+    display: inline-flex;
+    animation: ticker 40s linear infinite;
+    gap: 0;
+  }
+  .ticker-inner:hover { animation-play-state: paused; }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .tick-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 28px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    opacity: 0.9;
+  }
+  .tick-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+
+  /* ─── FEATURED STORIES ───────────────────────────────────── */
+  #featured { padding: 70px 0; border-bottom: 1px solid var(--rule); }
+  .featured-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  .story-card {
+    background: var(--bg-card);
+    padding: 32px;
+    transition: background var(--transition);
+    position: relative;
+    cursor: pointer;
+  }
+  .story-card:hover { background: var(--tag-bg); }
+  .story-card.primary { padding: 40px; }
+  .story-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--rule);
+  }
+  .story-right .story-card { flex: 1; }
+  .story-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 1px;
+    margin-bottom: 14px;
+  }
+  .story-tag.inv { background: var(--red); color: #fff; }
+  .story-title {
+    font-family: var(--serif);
+    font-weight: 600;
+    line-height: 1.28;
+    color: var(--ink);
+    margin-bottom: 12px;
+    transition: color var(--transition);
+  }
+  .story-card:hover .story-title { color: var(--red); }
+  .story-card.primary .story-title { font-size: 1.55rem; }
+  .story-card.secondary .story-title { font-size: 1.08rem; }
+  .story-card.tertiary .story-title { font-size: 0.98rem; }
+  .story-deck {
+    font-family: var(--serif-text);
+    font-size: 0.92rem;
+    color: var(--ink-2);
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+  .story-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 0.72rem;
+    color: var(--ink-3);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    flex-wrap: wrap;
+  }
+  .story-meta-pub { color: var(--red); font-weight: 600; }
+  .story-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-top: 16px;
+    transition: gap var(--transition);
+  }
+  .story-link:hover { gap: 10px; }
+
+  /* ─── ABOUT ──────────────────────────────────────────────── */
+  #about { border-bottom: 1px solid var(--rule); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 70px;
+    align-items: start;
+    margin-top: 48px;
+  }
+  .about-body {
+    font-family: var(--serif-text);
+    font-size: 1.05rem;
+    color: var(--ink-2);
+    line-height: 1.85;
+  }
+  .about-body p + p { margin-top: 18px; }
+  .about-aside {}
+  .aside-block {
+    padding: 24px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--bg-card);
+    margin-bottom: 20px;
+  }
+  .aside-block-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule-light);
+  }
+  .expertise-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .expertise-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--tag-text);
+    background: var(--tag-bg);
+    padding: 5px 12px;
+    border-radius: 2px;
+    border: 1px solid var(--rule);
+  }
+  .ethics-list { display: flex; flex-direction: column; gap: 10px; }
+  .ethics-item {
+    display: flex;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: var(--ink-2);
+    font-family: var(--serif-text);
+    line-height: 1.55;
+  }
+  .ethics-item::before {
+    content: '→';
+    color: var(--red);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ─── PORTFOLIO ──────────────────────────────────────────── */
+  #portfolio { border-bottom: 1px solid var(--rule); }
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 32px 0 40px;
+    align-items: center;
+  }
+  .filter-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-right: 6px;
+  }
+  .filter-btn {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    padding: 7px 16px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: transparent;
+    transition: all var(--transition);
+  }
+  .filter-btn:hover { color: var(--red); border-color: var(--red); }
+  .filter-btn.active { background: var(--red); color: #fff; border-color: var(--red); }
+  .search-box {
+    margin-left: auto;
+    position: relative;
+  }
+  .search-box input {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--ink);
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 8px 36px 8px 14px;
+    width: 200px;
+    outline: none;
+    transition: border-color var(--transition);
+  }
+  .search-box input::placeholder { color: var(--ink-3); }
+  .search-box input:focus { border-color: var(--accent); }
+  .search-box svg {
+    position: absolute; right: 10px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-3);
+    pointer-events: none;
+  }
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .article-card {
+    background: var(--bg-card);
+    padding: 26px;
+    transition: background var(--transition);
+    position: relative;
+  }
+  .article-card[data-hidden="true"] { display: none; }
+  .article-card:hover { background: var(--tag-bg); }
+  .article-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 0.63rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 1px;
+    margin-bottom: 12px;
+  }
+  .article-tag.inv-tag { background: rgba(192,57,43,0.12); color: var(--red); }
+  .article-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--ink);
+    margin-bottom: 10px;
+    transition: color var(--transition);
+  }
+  .article-card:hover .article-title { color: var(--red); }
+  .article-deck {
+    font-family: var(--serif-text);
+    font-size: 0.86rem;
+    color: var(--ink-2);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    color: var(--ink-3);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-top: 1px solid var(--rule-light);
+    padding-top: 14px;
+    margin-top: auto;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .article-footer a {
+    color: var(--red);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.68rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap var(--transition);
+  }
+  .article-footer a:hover { gap: 8px; }
+  .no-results {
+    grid-column: 1 / -1;
+    padding: 60px;
+    text-align: center;
+    color: var(--ink-3);
+    font-family: var(--serif-text);
+    font-size: 1rem;
+  }
+
+  /* ─── RESEARCH ───────────────────────────────────────────── */
+  #research { border-bottom: 1px solid var(--rule); }
+  .research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .research-card {
+    padding: 32px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--bg-card);
+    position: relative;
+    transition: border-color var(--transition), transform 0.2s;
+  }
+  .research-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--red);
+    border-radius: 2px 0 0 2px;
+  }
+  .research-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .research-card-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+  }
+  .research-card-title {
+    font-family: var(--serif);
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .research-card-body {
+    font-family: var(--serif-text);
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+  .research-card-meta {
+    font-size: 0.72rem;
+    color: var(--ink-3);
+    font-weight: 500;
+  }
+  .research-interests {
+    margin-top: 48px;
+    padding: 36px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--bg-card);
+  }
+  .interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .interest-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 0.88rem;
+    color: var(--ink-2);
+    font-family: var(--serif-text);
+    line-height: 1.5;
+  }
+  .interest-bullet {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--red);
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  /* ─── EXPERIENCE ─────────────────────────────────────────── */
+  #experience { border-bottom: 1px solid var(--rule); }
+  .timeline { margin-top: 48px; position: relative; padding-left: 32px; }
+  .timeline::before {
+    content: '';
+    position: absolute; left: 0; top: 8px; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--red), var(--rule));
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 44px;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -39px; top: 5px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--red);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--red);
+  }
+  .timeline-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .timeline-role {
+    font-family: var(--serif);
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .timeline-period {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--red);
+    letter-spacing: 0.06em;
+    background: rgba(192,57,43,0.1);
+    padding: 3px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .timeline-org {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    margin-bottom: 12px;
+    letter-spacing: 0.02em;
+  }
+  .timeline-body {
+    font-family: var(--serif-text);
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    line-height: 1.7;
+  }
+  .timeline-body ul { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+  .timeline-body ul li {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+  .timeline-body ul li::before {
+    content: '—';
+    color: var(--red);
+    flex-shrink: 0;
+  }
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .edu-card {
+    padding: 24px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--bg-card);
+  }
+  .edu-degree {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .edu-inst {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink-2);
+    margin-bottom: 4px;
+  }
+  .edu-year {
+    font-size: 0.72rem;
+    color: var(--red);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+
+  /* ─── CONTACT ────────────────────────────────────────────── */
+  #contact { border-bottom: 1px solid var(--rule); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 48px;
+    align-items: start;
+  }
+  .contact-info {}
+  .contact-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--rule-light);
+  }
+  .contact-item:first-child { padding-top: 0; border-top: none; }
+  .contact-icon {
+    width: 38px; height: 38px;
+    border-radius: 2px;
+    background: var(--tag-bg);
+    border: 1px solid var(--rule);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--red);
+    font-size: 1rem;
+  }
+  .contact-detail-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 4px;
+  }
+  .contact-detail-val {
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    font-family: var(--serif-text);
+  }
+  .contact-detail-val a { transition: color var(--transition); }
+  .contact-detail-val a:hover { color: var(--red); }
+  .contact-form {}
+  .form-group { margin-bottom: 18px; }
+  .form-group label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 7px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--ink);
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color var(--transition);
+    resize: vertical;
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: var(--ink-3); }
+  .form-group input:focus,
+  .form-group textarea:focus { border-color: var(--accent); }
+  .form-group textarea { min-height: 130px; }
+  .form-note {
+    font-size: 0.75rem;
+    color: var(--ink-3);
+    font-family: var(--serif-text);
+    font-style: italic;
+    margin-top: 12px;
+  }
+  #form-status {
+    margin-top: 12px;
+    font-size: 0.82rem;
+    font-family: var(--serif-text);
+    display: none;
+  }
+  #form-status.success { color: #27ae60; display: block; }
+  #form-status.error { color: var(--red); display: block; }
+
+  /* ─── FOOTER ─────────────────────────────────────────────── */
+  footer {
+    padding: 40px 0 30px;
+    border-top: 1px solid var(--rule);
+  }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-name {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .footer-name span { color: var(--red); }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer-links a {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    transition: color var(--transition);
+  }
+  .footer-links a:hover { color: var(--red); }
+  .footer-copy {
+    font-size: 0.75rem;
+    color: var(--ink-3);
+    font-family: var(--serif-text);
+  }
+
+  /* ─── BACK TO TOP ─────────────────────────────────────────── */
+  #back-top {
+    position: fixed;
+    right: 24px; bottom: 32px;
+    width: 42px; height: 42px;
+    background: var(--red);
+    color: #fff;
+    border-radius: 2px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(8px);
+    z-index: 900;
+  }
+  #back-top.visible { opacity: 1; pointer-events: all; transform: translateY(0); }
+  #back-top:hover { background: var(--red-hover); }
+
+  /* ─── RESPONSIVE ─────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-portrait { align-items: flex-start; flex-direction: row; align-items: center; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .research-grid { grid-template-columns: 1fr; }
+    .articles-grid { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .featured-grid { grid-template-columns: 1fr; }
+    .story-right { flex-direction: row; }
+  }
+  @media (max-width: 700px) {
+    .nav-links { display: none; }
+    #menu-toggle { display: flex; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .story-right { flex-direction: column; }
+    .hero-stats { gap: 16px; }
+    .search-box { margin-left: 0; width: 100%; }
+    .search-box input { width: 100%; }
+    .filter-bar { flex-direction: column; align-items: flex-start; }
+  }
+  @media (max-width: 480px) {
+    .section { padding: 56px 0; }
+    .container { padding: 0 16px; }
+    .hero-grid { gap: 28px; }
+    .hero-portrait { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── TOP NAV ─────────────────────────────────────────────── -->
+<header id="top-bar" role="banner">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Raiyan Tahrim home">RT<span>.</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#portfolio">Work</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-controls">
+      <button id="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+      <button id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#portfolio" class="mobile-link">Work</a>
+    <a href="#research" class="mobile-link">Research</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ─── HERO ──────────────────────────────────────────────────── -->
+<section id="hero" aria-labelledby="hero-name">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow" aria-hidden="true">
+          <div class="hero-eyebrow-rule"></div>
+          <span class="hero-eyebrow-text">Journalist &amp; Researcher — Dhaka, Bangladesh</span>
+        </div>
+        <h1 class="hero-headline" id="hero-name">
+          Md. Raiyan<br><em>Tahrim</em>
+        </h1>
+        <p class="hero-bio">
+          Reporter covering public interest stories at the intersection of power, accountability, and human rights. Currently staff journalist at the <strong>Daily Times of Bangladesh</strong>, with a research track in media studies and governance. Beat reporter across press freedom, urban governance, the Rohingya crisis, agriculture and economic policy.
+        </p>
+        <div class="hero-ctas">
+          <a href="#portfolio" class="btn-primary">View My Work ↓</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+          <a href="https://tob.news/author/raiyantahrim/" target="_blank" rel="noopener" class="btn-secondary">TOB Profile ↗</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <div class="portrait-frame" aria-hidden="true">
+          <div class="portrait-initials">RT</div>
+        </div>
+        <div class="hero-stats" aria-label="Key stats">
+          <div class="stat">
+            <div class="stat-n">40+</div>
+            <div class="stat-l">Stories</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">5+</div>
+            <div class="stat-l">Beats</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">2</div>
+            <div class="stat-l">Platforms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TICKER ─────────────────────────────────────────────────── -->
+<div id="ticker" aria-label="Recent headlines" aria-hidden="true">
+  <div class="ticker-inner" id="ticker-inner">
+    <span class="tick-item"><span class="tick-dot"></span>Madrasa rape: Whistleblower doctor faces death threat — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Sovereign of sorrows: Rohingya continue perilous maritime exodus — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Arrests, censorship expose interim govt's failure on press freedom — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Journalists struggling with low pay, insecure job — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Fuel shock hits markets, debunks minister's claims — TOB News, Apr 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Mojo nuisance: Policing goes live, rights erode — TOB News, Apr 2026</span>
+    <!-- duplicate for seamless loop -->
+    <span class="tick-item"><span class="tick-dot"></span>Madrasa rape: Whistleblower doctor faces death threat — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Sovereign of sorrows: Rohingya continue perilous maritime exodus — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Arrests, censorship expose interim govt's failure on press freedom — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Journalists struggling with low pay, insecure job — TOB News, May 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Fuel shock hits markets, debunks minister's claims — TOB News, Apr 2026</span>
+    <span class="tick-item"><span class="tick-dot"></span>Mojo nuisance: Policing goes live, rights erode — TOB News, Apr 2026</span>
+  </div>
+</div>
+
+<!-- ─── FEATURED STORIES ───────────────────────────────────────── -->
+<section id="featured" aria-labelledby="featured-heading">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">Featured Investigations</div>
+    <h2 class="section-title" id="featured-heading">Selected Works</h2>
+    <p class="section-lead">Public interest reporting that holds institutions to account and gives a voice to those outside the frame.</p>
+
+    <div class="featured-grid" role="list">
+
+      <article class="story-card primary" role="listitem">
+        <span class="story-tag inv">Investigative</span>
+        <h3 class="story-title">Madrasa Rape: Whistleblower Doctor Faces Death Threat</h3>
+        <p class="story-deck">The gynaecologist who exposed the pregnancy of an 11-year-old rape victim at a qawmi madrasa in Netrakona now faces threats to her life for speaking to the media. A reported case illuminating institutional silence around child sexual abuse.</p>
+        <div class="story-meta">
+          <span class="story-meta-pub">Daily Times of Bangladesh</span>
+          <span>May 6, 2026</span>
+          <span>Child Protection · Human Rights</span>
+        </div>
+        <a href="https://tob.news/madrasa-rape-whistleblower-doctor-faces-death-threat/" target="_blank" rel="noopener" class="story-link">Read full report →</a>
+      </article>
+
+      <div class="story-right">
+        <article class="story-card secondary" role="listitem">
+          <span class="story-tag">Human Rights</span>
+          <h3 class="story-title">Sovereign of Sorrows: Rohingya Continue Perilous Maritime Exodus</h3>
+          <p class="story-deck">Field reporting from Rohingya camps in Cox's Bazar. Displaced youth leaders describe a continuing crisis of displacement, statelessness, and dangerous sea crossings.</p>
+          <div class="story-meta">
+            <span class="story-meta-pub">Daily Times of Bangladesh</span>
+            <span>May 4, 2026</span>
+          </div>
+          <a href="https://tob.news/sovereign-of-sorrows-rohingya-continue-perilous-maritime-exodus/" target="_blank" rel="noopener" class="story-link">Read →</a>
+        </article>
+
+        <article class="story-card tertiary" role="listitem">
+          <span class="story-tag">Press Freedom</span>
+          <h3 class="story-title">Arrests, Censorship Expose Interim Govt's Failure on Press Freedom</h3>
+          <p class="story-deck">An accountability report documenting arrests and intimidation of journalists under Bangladesh's interim government.</p>
+          <div class="story-meta">
+            <span class="story-meta-pub">Daily Times of Bangladesh</span>
+            <span>May 3, 2026</span>
+          </div>
+          <a href="https://tob.news/arrests-censorship-expose-interim-govts-failure-on-press-freedom/" target="_blank" rel="noopener" class="story-link">Read →</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ───────────────────────────────────────────────────── -->
+<section id="about" class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">About</div>
+    <h2 class="section-title" id="about-heading">Journalist. Researcher. Field Reporter.</h2>
+
+    <div class="about-grid">
+      <div>
+        <div class="about-body">
+          <p>Md. Raiyan Tahrim is a journalist and researcher based in Dhaka, Bangladesh, where he works as a staff reporter for the <strong>Daily Times of Bangladesh (TOB News)</strong>. His work is grounded in field reporting and public interest accountability journalism, with particular attention to stories that other outlets leave untouched.</p>
+          <p>His reporting has traversed a wide arc of beats: child protection and gender-based violence, press freedom, the Rohingya displacement crisis, urban governance failures, agricultural policy, transport economics, and the shrinking space for independent media in Bangladesh. His field dispatches from Rohingya camps in Cox's Bazar and his whistleblower protection coverage represent some of his most significant work to date.</p>
+          <p>Alongside his journalism practice, Tahrim maintains an academic research profile on ResearchGate, reflecting an interest in media studies, journalism ethics, and evidence-based reporting methodologies. He believes journalism and research are complementary, not competing, disciplines.</p>
+          <p>He approaches every story with an evidence-first framework: source verification, document review, and corroboration before publication. He does not treat official statements as settled facts, and he is committed to representing those harmed by systems of power with accuracy and care.</p>
+        </div>
+      </div>
+
+      <div class="about-aside">
+        <div class="aside-block">
+          <div class="aside-block-title">Areas of Expertise</div>
+          <div class="expertise-list">
+            <span class="expertise-tag">Investigative Journalism</span>
+            <span class="expertise-tag">Press Freedom</span>
+            <span class="expertise-tag">Human Rights Reporting</span>
+            <span class="expertise-tag">Rohingya Crisis</span>
+            <span class="expertise-tag">Governance &amp; Policy</span>
+            <span class="expertise-tag">Agricultural Economics</span>
+            <span class="expertise-tag">Urban Reporting</span>
+            <span class="expertise-tag">Transport Policy</span>
+            <span class="expertise-tag">Mobile Journalism</span>
+            <span class="expertise-tag">Media Studies</span>
+            <span class="expertise-tag">Child Protection</span>
+            <span class="expertise-tag">Field Reporting</span>
+          </div>
+        </div>
+        <div class="aside-block">
+          <div class="aside-block-title">Editorial Standards</div>
+          <ul class="ethics-list" role="list">
+            <li class="ethics-item">Verification before publication — no unconfirmed claims</li>
+            <li class="ethics-item">Clear separation of reporting, analysis and opinion</li>
+            <li class="ethics-item">Named sources or documented reasoning for anonymity</li>
+            <li class="ethics-item">Correction policy: errors corrected promptly and transparently</li>
+            <li class="ethics-item">No conflicts of interest with covered subjects</li>
+          </ul>
+        </div>
+        <div class="aside-block">
+          <div class="aside-block-title">Languages</div>
+          <div class="expertise-list">
+            <span class="expertise-tag">Bengali — Native</span>
+            <span class="expertise-tag">English — Professional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ─── PORTFOLIO ──────────────────────────────────────────────── -->
+<section id="portfolio" class="section" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">Portfolio</div>
+    <h2 class="section-title" id="portfolio-heading">Reporting Archive</h2>
+    <p class="section-lead">A selection of published work across beats. Filter by category or search by keyword.</p>
+
+    <div class="filter-bar" role="group" aria-label="Filter articles">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="investigative" aria-pressed="false">Investigative</button>
+      <button class="filter-btn" data-filter="human-rights" aria-pressed="false">Human Rights</button>
+      <button class="filter-btn" data-filter="governance" aria-pressed="false">Governance</button>
+      <button class="filter-btn" data-filter="economy" aria-pressed="false">Economy</button>
+      <button class="filter-btn" data-filter="media" aria-pressed="false">Press &amp; Media</button>
+      <div class="search-box">
+        <label for="article-search" class="sr-only">Search articles</label>
+        <input type="search" id="article-search" placeholder="Search articles…" autocomplete="off" />
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+    </div>
+
+    <div class="articles-grid" id="articles-grid" role="list">
+
+      <article class="article-card" data-cat="investigative human-rights" data-title="madrasa rape whistleblower doctor death threat" role="listitem">
+        <span class="article-tag inv-tag">Investigative</span>
+        <h3 class="article-title">Madrasa Rape: Whistleblower Doctor Faces Death Threat</h3>
+        <p class="article-deck">A gynaecologist who exposed abuse of an 11-year-old victim at a qawmi madrasa in Netrakona faces intimidation for speaking out. A case study in how institutional power silences medical professionals.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · May 6, 2026</span>
+          <a href="https://tob.news/madrasa-rape-whistleblower-doctor-faces-death-threat/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="human-rights" data-title="rohingya maritime exodus sorrows" role="listitem">
+        <span class="article-tag">Human Rights</span>
+        <h3 class="article-title">Sovereign of Sorrows: Rohingya Continue Perilous Maritime Exodus</h3>
+        <p class="article-deck">Field dispatches from Rohingya Camp-2, Cox's Bazar. Youth leaders describe ongoing displacement, sea crossings and a crisis of statelessness with no resolution in sight.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · May 4, 2026</span>
+          <a href="https://tob.news/sovereign-of-sorrows-rohingya-continue-perilous-maritime-exodus/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="media investigative" data-title="arrests censorship press freedom interim government" role="listitem">
+        <span class="article-tag inv-tag">Press Freedom</span>
+        <h3 class="article-title">Arrests, Censorship Expose Interim Govt's Failure on Press Freedom</h3>
+        <p class="article-deck">An accountability report documenting journalist arrests and media censorship during Bangladesh's interim government — exposing the gap between stated democratic values and practice.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · May 3, 2026</span>
+          <a href="https://tob.news/arrests-censorship-expose-interim-govts-failure-on-press-freedom/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="media" data-title="journalists low pay insecure job media bangladesh" role="listitem">
+        <span class="article-tag">Media</span>
+        <h3 class="article-title">Journalists Struggling with Low Pay, Insecure Jobs</h3>
+        <p class="article-deck">An investigation into the labour conditions inside Bangladesh's media industry — low wages, job insecurity and editorial pressure that threaten editorial independence from within.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · May 1, 2026</span>
+          <a href="https://tob.news/journalists-struggling-with-low-pay-insecure-job/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="governance" data-title="shaheed farhan fayyaz playground inclusion accessibility parliament" role="listitem">
+        <span class="article-tag">Governance</span>
+        <h3 class="article-title">Shaheed Farhan Fayyaz Playground: Built for Inclusion, Locked in Reality</h3>
+        <p class="article-deck">An accessible playground beside the National Parliament Building was built as a landmark initiative. A field report reveals what visitors actually encounter when they arrive.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · Apr 29, 2026</span>
+          <a href="https://tob.news/shaheed-farhan-fayyaz-playground-built-for-inclusion-locked-in-reality/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="governance" data-title="DNCC green initiative tree plantation leadership dhaka urban" role="listitem">
+        <span class="article-tag">Governance</span>
+        <h3 class="article-title">DNCC's Green Initiative Falters Amid Leadership Change</h3>
+        <p class="article-deck">Dhaka's ambitious urban tree plantation programme — a response to extreme heat and rapid urbanisation — stalls as the city's North Corporation navigates a leadership transition.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · Apr 29, 2026</span>
+          <a href="https://tob.news/dnccs-green-initiative-falters-amid-leadership-change/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="economy" data-title="fuel shock markets minister claims energy prices" role="listitem">
+        <span class="article-tag">Economy</span>
+        <h3 class="article-title">Fuel Shock Hits Markets, Debunks Minister's Claims</h3>
+        <p class="article-deck">Low-income households already under pressure from rising commodity prices face a fresh blow as a fuel supply crunch contradicts official assurances. A fact-check anchored in market visits.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · Apr 25, 2026</span>
+          <a href="https://tob.news/fuel-shock-hits-markets-debunks-ministers-claims/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="economy" data-title="farmers price shock boro paddy procurement" role="listitem">
+        <span class="article-tag">Economy</span>
+        <h3 class="article-title">Farmers Face Price Shock</h3>
+        <p class="article-deck">The government's decision to freeze Boro paddy and rice procurement prices sparks concern among farmers already absorbing input cost increases. A ground-level account of the policy's impact.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · Apr 23, 2026</span>
+          <a href="https://tob.news/farmers-face-price-shock/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="governance economy" data-title="bus fare BRTA transport blank cheque hadiuzzaman interview" role="listitem">
+        <span class="article-tag">Interview</span>
+        <h3 class="article-title">Bus Fare Setting Has Become a Farce</h3>
+        <p class="article-deck">Transport expert Md Hadiuzzaman tells TOB News that BRTA's fare-setting mechanism effectively hands bus operators a blank cheque — a Times Interview on accountability in public transport regulation.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · Apr 22, 2026</span>
+          <a href="https://tob.news/bus-fare-setting-has-become-a-farce/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <article class="article-card" data-cat="media human-rights" data-title="mobile journalism mojo policing rights erode dhaka university" role="listitem">
+        <span class="article-tag">Press Freedom</span>
+        <h3 class="article-title">Mojo Nuisance: Policing Goes Live, Rights Erode</h3>
+        <p class="article-deck">A University of Dhaka student's encounter with police at Suhrawardy Udyan opens a wider inquiry into how citizen and mobile journalism is being treated as a threat by law enforcement.</p>
+        <div class="article-footer">
+          <span>Daily Times of Bangladesh · Apr 21, 2026</span>
+          <a href="https://tob.news/mobile-journalism-nuisance-policing-goes-live-rights-erode/" target="_blank" rel="noopener">Read ↗</a>
+        </div>
+      </article>
+
+      <div class="no-results" id="no-results" style="display:none;" role="status" aria-live="polite">
+        No articles match your search.
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ─── RESEARCH ────────────────────────────────────────────────── -->
+<section id="research" class="section" aria-labelledby="research-heading">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">Research</div>
+    <h2 class="section-title" id="research-heading">Academic &amp; Research Work</h2>
+    <p class="section-lead">Scholarship and structured inquiry that sits alongside and informs field reporting practice.</p>
+
+    <div class="research-grid">
+
+      <div class="research-card">
+        <div class="research-card-label">Research Interest</div>
+        <h3 class="research-card-title">Press Freedom, Media Independence &amp; Journalist Safety in Bangladesh</h3>
+        <p class="research-card-body">An ongoing research interest in the structural conditions that enable or constrain press freedom in South Asian democracies, with Bangladesh as the primary case study. Draws on legal analysis, case documentation and field interviews.</p>
+        <div class="research-card-meta">Media Studies · Journalism Policy</div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-label">Research Interest</div>
+        <h3 class="research-card-title">Refugee Journalism Ethics: Covering Stateless Populations</h3>
+        <p class="research-card-body">Methodological reflections on how journalists should approach coverage of displacement and statelessness, with reference to the Rohingya crisis. Focuses on ethical frameworks for field reporting in vulnerable community settings.</p>
+        <div class="research-card-meta">Journalism Ethics · Refugee Studies</div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-label">Research Interest</div>
+        <h3 class="research-card-title">Labour Conditions in Bangladesh's Media Industry</h3>
+        <p class="research-card-body">Investigative research into the structural economic pressures on Bangladeshi journalists — wages, job security and ownership structures — and their downstream effect on editorial independence and public interest reporting.</p>
+        <div class="research-card-meta">Media Economics · Labour Studies</div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-label">Research Interest</div>
+        <h3 class="research-card-title">Mobile Journalism, Digital Tools &amp; Citizen Reporting Rights</h3>
+        <p class="research-card-body">Examining the intersection of technology, journalistic practice and civil liberties — specifically how mobile journalism is reshaping what counts as press work and how law enforcement and institutions are responding.</p>
+        <div class="research-card-meta">Digital Journalism · Civil Liberties</div>
+      </div>
+
+    </div>
+
+    <div class="research-interests">
+      <div class="aside-block-title">Research Interests at a Glance</div>
+      <div class="interest-grid">
+        <div class="interest-item"><div class="interest-bullet"></div>Press freedom &amp; journalist safety</div>
+        <div class="interest-item"><div class="interest-bullet"></div>Refugee and displacement reporting ethics</div>
+        <div class="interest-item"><div class="interest-bullet"></div>Media labour and ownership structures</div>
+        <div class="interest-item"><div class="interest-bullet"></div>Digital and mobile journalism</div>
+        <div class="interest-item"><div class="interest-bullet"></div>Governance accountability reporting</div>
+        <div class="interest-item"><div class="interest-bullet"></div>Child protection in media coverage</div>
+        <div class="interest-item"><div class="interest-bullet"></div>Agricultural and rural policy reporting</div>
+        <div class="interest-item"><div class="interest-bullet"></div>Urban governance and public infrastructure</div>
+      </div>
+      <div style="margin-top:28px;">
+        <a href="https://www.researchgate.net/profile/Md-Raiyan-Tahrim" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-flex;">View ResearchGate Profile ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ─── EXPERIENCE ─────────────────────────────────────────────── -->
+<section id="experience" class="section" aria-labelledby="experience-heading">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">Experience</div>
+    <h2 class="section-title" id="experience-heading">Professional Background</h2>
+    <p class="section-lead">Reporting experience across digital newsrooms covering Bangladesh and South Asia.</p>
+
+    <div class="timeline" role="list">
+
+      <div class="timeline-item" role="listitem">
+        <div class="timeline-head">
+          <div class="timeline-role">Staff Reporter</div>
+          <span class="timeline-period">2025 – Present</span>
+        </div>
+        <div class="timeline-org">Daily Times of Bangladesh (TOB News) — Dhaka, Bangladesh</div>
+        <div class="timeline-body">
+          <p>Full-time beat reporter covering public interest stories with a focus on investigative accountability, press freedom, human rights and governance. Primary reporter on a wide range of national stories including the Rohingya maritime crisis, journalist labour conditions, child protection failures and urban policy.</p>
+          <ul>
+            <li>Field reporting from sensitive environments including refugee camps and crime scenes</li>
+            <li>Whistleblower protection stories requiring source security protocols</li>
+            <li>Beat coverage of agriculture, transport economics and urban governance</li>
+            <li>Interviews with government officials, academics and affected communities</li>
+            <li>Multimedia content production alongside print and digital publication</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" role="listitem">
+        <div class="timeline-head">
+          <div class="timeline-role">Researcher (Independent)</div>
+          <span class="timeline-period">Ongoing</span>
+        </div>
+        <div class="timeline-org">ResearchGate — Academic Research Profile</div>
+        <div class="timeline-body">
+          <p>Active research profile documenting scholarly work in media studies, journalism ethics and related public interest research disciplines. Research output informs field reporting methodology and editorial practice.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-label" style="margin-top:56px;" aria-hidden="true">Education</div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-degree">[Degree — to be confirmed]</div>
+        <div class="edu-inst">[University — to be confirmed]</div>
+        <div class="edu-year">Add your educational background here</div>
+      </div>
+    </div>
+    <p style="margin-top:18px; font-size:0.82rem; color:var(--ink-3); font-family:var(--serif-text); font-style:italic;">Note: Education and affiliation details to be updated with verified credentials.</p>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ─── CONTACT ─────────────────────────────────────────────────── -->
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-label" aria-hidden="true">Contact</div>
+    <h2 class="section-title" id="contact-heading">Get in Touch</h2>
+    <p class="section-lead">Available for story collaborations, media inquiries, research partnerships and speaking engagements.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">✉</div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-val">
+              <a href="mailto:[your.email@example.com]">[your.email@example.com]</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">in</div>
+          <div>
+            <div class="contact-detail-label">LinkedIn</div>
+            <div class="contact-detail-val">
+              <a href="https://www.linkedin.com/in/md-raiyan-tahrim/" target="_blank" rel="noopener">linkedin.com/in/md-raiyan-tahrim</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">RG</div>
+          <div>
+            <div class="contact-detail-label">ResearchGate</div>
+            <div class="contact-detail-val">
+              <a href="https://www.researchgate.net/profile/Md-Raiyan-Tahrim" target="_blank" rel="noopener">researchgate.net/profile/Md-Raiyan-Tahrim</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📰</div>
+          <div>
+            <div class="contact-detail-label">Published Work</div>
+            <div class="contact-detail-val">
+              <a href="https://tob.news/author/raiyantahrim/" target="_blank" rel="noopener">tob.news/author/raiyantahrim</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div>
+            <div class="contact-detail-label">Location</div>
+            <div class="contact-detail-val">Dhaka, Bangladesh</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="cf-name">Full Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your full name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="cf-org">Organisation (optional)</label>
+            <input type="text" id="cf-org" name="organisation" placeholder="Publication, NGO or institution" autocomplete="organization" />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email Address</label>
+            <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Story tip, collaboration, inquiry…" required />
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="Describe your inquiry or proposal…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">This form is a placeholder. Connect it to Formspree, Netlify Forms, or a backend endpoint before deployment.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─── FOOTER ──────────────────────────────────────────────────── -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-name">Md. Raiyan Tahrim<span>.</span></div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="https://tob.news/author/raiyantahrim/" target="_blank" rel="noopener">TOB News</a>
+        <a href="https://www.researchgate.net/profile/Md-Raiyan-Tahrim" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/md-raiyan-tahrim/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+      <p class="footer-copy">© 2026 Md. Raiyan Tahrim. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="Back to top">↑</button>
+
+<!-- Visually hidden utility -->
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}</style>
+
+<!-- ─── SCRIPTS ──────────────────────────────────────────────────── -->
+<script>
+  /* Dark mode */
+  const toggle = document.getElementById('dark-toggle');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let dark = localStorage.getItem('theme') === 'dark' || (localStorage.getItem('theme') === null && prefersDark);
+  function applyTheme() {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    toggle.textContent = dark ? '☀' : '☾';
+    toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  applyTheme();
+  toggle.addEventListener('click', () => { dark = !dark; localStorage.setItem('theme', dark ? 'dark' : 'light'); applyTheme(); });
+
+  /* Mobile menu */
+  const menuBtn = document.getElementById('menu-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.mobile-link').forEach(l => {
+    l.addEventListener('click', () => { mobileNav.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); });
+  });
+
+  /* Portfolio filter + search */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const searchInput = document.getElementById('article-search');
+  const cards = document.querySelectorAll('.article-card');
+  const noResults = document.getElementById('no-results');
+
+  function applyFilters() {
+    const active = document.querySelector('.filter-btn.active').dataset.filter;
+    const query = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+    cards.forEach(card => {
+      const cats = card.dataset.cat || '';
+      const title = card.dataset.title || '';
+      const catMatch = active === 'all' || cats.split(' ').includes(active);
+      const searchMatch = query === '' || title.includes(query) || card.querySelector('.article-title').textContent.toLowerCase().includes(query);
+      const show = catMatch && searchMatch;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed','true');
+      applyFilters();
+    });
+  });
+  searchInput.addEventListener('input', applyFilters);
+
+  /* Back to top */
+  const backTop = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    backTop.classList.toggle('visible', window.scrollY > 500);
+  }, { passive: true });
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* Contact form */
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const status = document.getElementById('form-status');
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const subject = document.getElementById('cf-subject').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+    if (!name || !email || !subject || !message) {
+      status.textContent = 'Please fill in all required fields.';
+      status.className = 'error';
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      status.textContent = 'Please enter a valid email address.';
+      status.className = 'error';
+      return;
+    }
+    // Placeholder success — connect to real endpoint before deployment
+    status.textContent = 'Message received. Thank you — I will be in touch shortly.';
+    status.className = 'success';
+    this.reset();
+  });
+
+  /* Active nav on scroll */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(link => {
+          link.style.color = link.getAttribute('href') === '#' + id ? 'var(--red)' : '';
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
